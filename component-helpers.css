@@ -1,0 +1,78 @@
+/**
+ * Component Helper Classes
+ * Utility classes for components that need special styling
+ */
+
+/* Product Card Actions */
+.product-actions {
+  position: absolute;
+  bottom: var(--theme-spacing-sm);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: var(--theme-transition);
+  display: flex;
+  gap: var(--theme-spacing-sm);
+}
+
+.product-card-new:hover .product-actions {
+  opacity: 1 !important;
+}
+
+.product-actions .btn-ghost-new {
+  background: var(--theme-card-bg) !important;
+  color: var(--theme-text-secondary) !important;
+  box-shadow: var(--theme-shadow-md);
+}
+
+.product-actions .btn-ghost-new:hover {
+  background: var(--theme-primary) !important;
+  color: var(--theme-text-white) !important;
+}
+
+/* Badge Positioning */
+.badge-success[style*="left"] {
+  left: var(--theme-spacing-sm);
+}
+
+/* Utility Spacing */
+.mt-3 {
+  margin-top: var(--theme-spacing) !important;
+}
+
+.mb-3 {
+  margin-bottom: var(--theme-spacing) !important;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: var(--theme-spacing-xl);
+  right: var(--theme-spacing-xl);
+  width: 50px;
+  height: 50px;
+  background: var(--theme-btn-primary-bg);
+  color: var(--theme-text-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--theme-shadow-xl);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--theme-transition);
+  z-index: var(--z-fixed, 1030);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+#backToTop:hover {
+  background: var(--theme-btn-primary-hover-bg);
+  transform: translateY(-4px);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}

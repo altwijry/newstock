@@ -1,0 +1,391 @@
+/**
+ * ========================================
+ * UNIFIED BUTTON SYSTEM
+ * ========================================
+ * Single source of truth for all button styles
+ * All buttons use theme-colors.css variables
+ * Last Updated: 2025-12-07
+ */
+
+/* ========================================
+   BASE BUTTON STYLES
+   ======================================== */
+.btn,
+.template-btn,
+.btn-newstock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--theme-btn-padding-y) var(--theme-btn-padding-x);
+  font-size: var(--theme-btn-font-size);
+  font-weight: var(--theme-btn-font-weight);
+  font-family: var(--theme-font-primary);
+  line-height: 1.5;
+  border-radius: var(--theme-btn-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  transition: var(--theme-transition-fast);
+  box-shadow: var(--theme-btn-shadow);
+}
+
+.btn:focus,
+.template-btn:focus,
+.btn-newstock:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--theme-primary-rgb), 0.2);
+}
+
+.btn:disabled,
+.template-btn:disabled,
+.btn-newstock:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ========================================
+   BUTTON ROLES - PRIMARY
+   ======================================== */
+.btn-primary,
+.template-btn:not([class*="-btn"]):not(.outline-btn):not(.dark-outline),
+.btn-primary-new,
+.btn-newstock.btn-primary-new {
+  background-color: var(--theme-btn-primary-bg);
+  color: var(--theme-btn-primary-text);
+  border-color: var(--theme-btn-primary-border);
+}
+
+.btn-primary:hover:not(:disabled),
+.template-btn:not([class*="-btn"]):not(.outline-btn):not(.dark-outline):hover:not(:disabled),
+.btn-primary-new:hover:not(:disabled),
+.btn-newstock.btn-primary-new:hover:not(:disabled) {
+  background-color: var(--theme-btn-primary-hover-bg);
+  border-color: var(--theme-btn-primary-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active:not(:disabled),
+.template-btn:not([class*="-btn"]):not(.outline-btn):not(.dark-outline):active:not(:disabled),
+.btn-primary-new:active:not(:disabled),
+.btn-newstock.btn-primary-new:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* ========================================
+   BUTTON ROLES - SECONDARY
+   ======================================== */
+.btn-secondary,
+.template-btn.dark-btn,
+.template-btn.black-btn,
+.btn-secondary-new,
+.btn-newstock.btn-secondary-new {
+  background-color: var(--theme-btn-secondary-bg);
+  color: var(--theme-btn-secondary-text);
+  border-color: var(--theme-btn-secondary-border);
+}
+
+.btn-secondary:hover:not(:disabled),
+.template-btn.dark-btn:hover:not(:disabled),
+.template-btn.black-btn:hover:not(:disabled),
+.btn-secondary-new:hover:not(:disabled),
+.btn-newstock.btn-secondary-new:hover:not(:disabled) {
+  background-color: var(--theme-btn-secondary-hover-bg);
+  border-color: var(--theme-btn-secondary-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   BUTTON ROLES - SUCCESS
+   ======================================== */
+.btn-success,
+.template-btn.green-btn {
+  background-color: var(--theme-btn-success-bg);
+  color: var(--theme-btn-success-text);
+  border-color: var(--theme-btn-success-border);
+}
+
+.btn-success:hover:not(:disabled),
+.template-btn.green-btn:hover:not(:disabled) {
+  background-color: var(--theme-btn-success-hover-bg);
+  border-color: var(--theme-btn-success-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   BUTTON ROLES - DANGER
+   ======================================== */
+.btn-danger,
+.template-btn.danger-btn {
+  background-color: var(--theme-btn-danger-bg);
+  color: var(--theme-btn-danger-text);
+  border-color: var(--theme-btn-danger-border);
+}
+
+.btn-danger:hover:not(:disabled),
+.template-btn.danger-btn:hover:not(:disabled) {
+  background-color: var(--theme-btn-danger-hover-bg);
+  border-color: var(--theme-btn-danger-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   BUTTON ROLES - WARNING
+   ======================================== */
+.btn-warning,
+.template-btn.yellow-btn {
+  background-color: var(--theme-btn-warning-bg);
+  color: var(--theme-btn-warning-text);
+  border-color: var(--theme-btn-warning-border);
+}
+
+.btn-warning:hover:not(:disabled),
+.template-btn.yellow-btn:hover:not(:disabled) {
+  background-color: var(--theme-btn-warning-hover-bg);
+  border-color: var(--theme-btn-warning-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   BUTTON ROLES - INFO
+   ======================================== */
+.btn-info {
+  background-color: var(--theme-btn-info-bg);
+  color: var(--theme-btn-info-text);
+  border-color: var(--theme-btn-info-border);
+}
+
+.btn-info:hover:not(:disabled) {
+  background-color: var(--theme-btn-info-hover-bg);
+  border-color: var(--theme-btn-info-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   BUTTON ROLES - OUTLINE
+   ======================================== */
+.btn-outline-primary,
+.template-btn.outline-btn,
+.template-btn.outlinee-btn,
+.btn-outline-new {
+  background-color: var(--theme-btn-outline-bg);
+  color: var(--theme-primary);
+  border-color: var(--theme-primary);
+}
+
+.btn-outline-primary:hover:not(:disabled),
+.template-btn.outline-btn:hover:not(:disabled),
+.template-btn.outlinee-btn:hover:not(:disabled),
+.btn-outline-new:hover:not(:disabled) {
+  background-color: var(--theme-btn-outline-hover-bg);
+  color: var(--theme-primary-hover);
+  border-color: var(--theme-btn-outline-hover-border);
+}
+
+.btn-outline-secondary,
+.template-btn.dark-outline {
+  background-color: var(--theme-btn-outline-bg);
+  color: var(--theme-secondary);
+  border-color: var(--theme-secondary);
+}
+
+.btn-outline-secondary:hover:not(:disabled),
+.template-btn.dark-outline:hover:not(:disabled) {
+  background-color: var(--theme-secondary);
+  color: var(--theme-text-white);
+  border-color: var(--theme-secondary);
+}
+
+.btn-outline-danger {
+  background-color: var(--theme-btn-outline-bg);
+  color: var(--theme-danger);
+  border-color: var(--theme-danger);
+}
+
+.btn-outline-danger:hover:not(:disabled) {
+  background-color: var(--theme-danger);
+  color: var(--theme-text-white);
+  border-color: var(--theme-danger);
+}
+
+.btn-outline-success {
+  background-color: var(--theme-btn-outline-bg);
+  color: var(--theme-success);
+  border-color: var(--theme-success);
+}
+
+.btn-outline-success:hover:not(:disabled) {
+  background-color: var(--theme-success);
+  color: var(--theme-text-white);
+  border-color: var(--theme-success);
+}
+
+.btn-outline-info {
+  background-color: var(--theme-btn-outline-bg);
+  color: var(--theme-info);
+  border-color: var(--theme-info);
+}
+
+.btn-outline-info:hover:not(:disabled) {
+  background-color: var(--theme-info);
+  color: var(--theme-text-white);
+  border-color: var(--theme-info);
+}
+
+.btn-outline-light {
+  background-color: var(--theme-btn-outline-bg);
+  color: var(--theme-text-white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-light:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--theme-text-white);
+  border-color: var(--theme-text-white);
+}
+
+/* ========================================
+   BUTTON ROLES - GHOST
+   ======================================== */
+.btn-ghost,
+.btn-ghost-new,
+.btn-newstock.btn-ghost-new {
+  background-color: var(--theme-btn-ghost-bg);
+  color: var(--theme-btn-ghost-text);
+  border-color: var(--theme-btn-ghost-border);
+}
+
+.btn-ghost:hover:not(:disabled),
+.btn-ghost-new:hover:not(:disabled),
+.btn-newstock.btn-ghost-new:hover:not(:disabled) {
+  background-color: var(--theme-btn-ghost-hover-bg);
+}
+
+/* ========================================
+   BUTTON SIZES
+   ======================================== */
+.btn-sm,
+.template-btn.sm-btn,
+.btn-newstock.btn-sm {
+  padding: 8px 16px;
+  font-size: 13px;
+  height: 32px;
+}
+
+.btn-md,
+.template-btn.md-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  height: 40px;
+}
+
+.btn-lg,
+.template-btn.lg-btn,
+.btn-newstock.btn-lg {
+  padding: 14px 32px;
+  font-size: 16px;
+  height: 52px;
+}
+
+/* ========================================
+   BUTTON WIDTHS
+   ======================================== */
+.btn-block,
+.w-100,
+.w-full {
+  width: 100%;
+  display: block;
+}
+
+/* ========================================
+   SPECIAL BUTTONS
+   ======================================== */
+.newsletter-btn,
+.search-btn {
+  background-color: var(--theme-btn-primary-bg);
+  color: var(--theme-btn-primary-text);
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--theme-btn-radius);
+  cursor: pointer;
+  transition: var(--theme-transition-fast);
+}
+
+.newsletter-btn:hover,
+.search-btn:hover {
+  background-color: var(--theme-btn-primary-hover-bg);
+  box-shadow: var(--theme-btn-shadow-hover);
+}
+
+.quick-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: var(--theme-card-bg);
+  color: var(--theme-text-primary);
+  border: 1px solid var(--theme-border);
+  border-radius: var(--theme-btn-radius);
+  text-decoration: none;
+  transition: var(--theme-transition-fast);
+}
+
+.quick-action-btn:hover {
+  background-color: var(--theme-bg-light);
+  border-color: var(--theme-primary);
+  color: var(--theme-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--theme-shadow-sm);
+}
+
+/* ========================================
+   BUTTON GROUPS
+   ======================================== */
+.btn-group {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.btn-group .btn,
+.btn-group .template-btn,
+.btn-group .btn-newstock {
+  margin: 0;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+@media (max-width: 768px) {
+  .btn,
+  .template-btn,
+  .btn-newstock {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .btn-lg,
+  .template-btn.lg-btn,
+  .btn-newstock.btn-lg {
+    padding: 12px 24px;
+    font-size: 15px;
+    height: 44px;
+  }
+}
+
+/* ========================================
+   RTL SUPPORT
+   ======================================== */
+[dir="rtl"] .btn,
+[dir="rtl"] .template-btn,
+[dir="rtl"] .btn-newstock {
+  /* RTL-specific adjustments if needed */
+}

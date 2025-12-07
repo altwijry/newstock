@@ -1,0 +1,325 @@
+/**
+ * ========================================
+ * THEME BUILDER - Generated CSS Variables
+ * ========================================
+ * Generated from Admin Panel Theme Builder
+ * Do not edit manually - changes will be overwritten
+ * Generated at: 2025-12-07 18:47:12
+ */
+:root {
+    /* ===== PRIMARY BRAND COLORS ===== */
+    --theme-primary: #b8860b;
+    --theme-primary-hover: #996f09;
+    --theme-primary-dark: #7a5807;
+    --theme-primary-light: #fef9e7;
+    --theme-primary-rgb: 184, 134, 11;
+
+    /* ===== SECONDARY COLORS ===== */
+    --theme-secondary: #1a1a2e;
+    --theme-secondary-hover: #2d2d44;
+    --theme-secondary-light: #3d3d5c;
+
+    /* ===== TEXT COLORS ===== */
+    --theme-text-primary: #1a1a2e;
+    --theme-text-secondary: #3d3d5c;
+    --theme-text-muted: #6b6b7d;
+    --theme-text-light: #9a9aab;
+    --theme-text-lighter: #b7aead;
+    --theme-text-white: #ffffff;
+
+    /* ===== BACKGROUND COLORS ===== */
+    --theme-bg-body: #fffef9;
+    --theme-bg-light: #fefbf0;
+    --theme-bg-lighter: #f6f6f6;
+    --theme-bg-gray: #f5f0e1;
+    --theme-bg-dark: #1a1a2e;
+
+    /* ===== BORDER COLORS ===== */
+    --theme-border: #e8e2d0;
+    --theme-border-light: #f5f0e1;
+    --theme-border-dark: #d4cbb4;
+
+    /* ===== STATUS COLORS ===== */
+    --theme-success: #22c55e;
+    --theme-warning: #b8860b;
+    --theme-danger: #dc2626;
+    --theme-info: #3b82f6;
+    --theme-success-rgb: 34, 197, 94;
+    --theme-warning-rgb: 184, 134, 11;
+    --theme-danger-rgb: 220, 38, 38;
+    --theme-info-rgb: 59, 130, 246;
+
+    /* ===== STATUS LIGHT COLORS ===== */
+    --theme-success-light: #e8f8ef;
+    --theme-warning-light: #fff8e6;
+    --theme-danger-light: #fde8eb;
+    --theme-info-light: #e0f2fe;
+
+    /* ===== STATUS HOVER COLORS ===== */
+    --theme-success-hover: #1fa058;
+    --theme-warning-hover: #e5ad30;
+    --theme-danger-hover: #d93a50;
+    --theme-info-hover: #0284c7;
+
+    /* ===== TYPOGRAPHY ===== */
+    --theme-font-primary: 'Poppins', sans-serif;
+    --theme-font-heading: 'Saira', sans-serif;
+    --theme-font-size-base: 15px;
+    --theme-font-size-sm: 15px;
+    --theme-font-size-lg: 20px;
+    --theme-line-height: 1.5;
+
+    /* ===== BORDER RADIUS ===== */
+    --theme-radius-xs: 3px;
+    --theme-radius-sm: 4px;
+    --theme-radius: 11px;
+    --theme-radius-lg: 16px;
+    --theme-radius-xl: 16px;
+    --theme-radius-pill: 53px;
+
+    /* ===== SHADOWS ===== */
+    --theme-shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+    --theme-shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --theme-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --theme-shadow-lg: 0 4px 16px rgba(0,0,0,0.15);
+    --theme-shadow-xl: 0 8px 30px rgba(0,0,0,0.2);
+
+    /* ===== SPACING ===== */
+    --theme-spacing-xs: 4px;
+    --theme-spacing-sm: 8px;
+    --theme-spacing: 16px;
+    --theme-spacing-lg: 24px;
+    --theme-spacing-xl: 32px;
+
+    /* ===== BUTTONS - UNIFIED SYSTEM ===== */
+    /* Button Base Properties */
+    --theme-btn-padding-x: 24px;
+    --theme-btn-padding-y: 12px;
+    --theme-btn-font-size: 14px;
+    --theme-btn-font-weight: 500;
+    --theme-btn-radius: 8px;
+    --theme-btn-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    --theme-btn-shadow-hover: 0 2px 4px rgba(0,0,0,0.1);
+    
+    /* Button Role: Primary (Main Actions) */
+    --theme-btn-primary-bg: var(--theme-primary);
+    --theme-btn-primary-hover-bg: var(--theme-primary-hover);
+    --theme-btn-primary-text: var(--theme-text-white);
+    --theme-btn-primary-border: var(--theme-primary);
+    
+    /* Button Role: Secondary (Alternative Actions) */
+    --theme-btn-secondary-bg: var(--theme-secondary);
+    --theme-btn-secondary-hover-bg: var(--theme-secondary-hover);
+    --theme-btn-secondary-text: var(--theme-text-white);
+    --theme-btn-secondary-border: var(--theme-secondary);
+    
+    /* Button Role: Success (Confirm Actions) */
+    --theme-btn-success-bg: var(--theme-success);
+    --theme-btn-success-hover-bg: var(--theme-success-hover);
+    --theme-btn-success-text: var(--theme-text-white);
+    --theme-btn-success-border: var(--theme-success);
+    
+    /* Button Role: Danger (Delete/Warning Actions) */
+    --theme-btn-danger-bg: var(--theme-danger);
+    --theme-btn-danger-hover-bg: var(--theme-danger-hover);
+    --theme-btn-danger-text: var(--theme-text-white);
+    --theme-btn-danger-border: var(--theme-danger);
+    
+    /* Button Role: Warning (Alert Actions) */
+    --theme-btn-warning-bg: var(--theme-warning);
+    --theme-btn-warning-hover-bg: var(--theme-warning-hover);
+    --theme-btn-warning-text: var(--theme-text-primary);
+    --theme-btn-warning-border: var(--theme-warning);
+    
+    /* Button Role: Info (Informational Actions) */
+    --theme-btn-info-bg: var(--theme-info);
+    --theme-btn-info-hover-bg: var(--theme-info-hover);
+    --theme-btn-info-text: var(--theme-text-white);
+    --theme-btn-info-border: var(--theme-info);
+    
+    /* Button Role: Outline (Light Actions) */
+    --theme-btn-outline-bg: transparent;
+    --theme-btn-outline-hover-bg: var(--theme-bg-light);
+    --theme-btn-outline-text: var(--theme-text-primary);
+    --theme-btn-outline-border: var(--theme-border-dark);
+    --theme-btn-outline-hover-border: var(--theme-primary);
+    
+    /* Button Role: Ghost (Minimal Actions) */
+    --theme-btn-ghost-bg: transparent;
+    --theme-btn-ghost-hover-bg: var(--theme-bg-lighter);
+    --theme-btn-ghost-text: var(--theme-text-secondary);
+    --theme-btn-ghost-border: transparent;
+
+    /* ===== CARDS ===== */
+    --theme-card-bg: #ffffff;
+    --theme-card-border: #e9e6e6;
+    --theme-card-radius: 12px;
+    --theme-card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --theme-card-hover-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    --theme-card-padding: 20px;
+
+    /* ===== HEADER ===== */
+    --theme-header-bg: #fffef9;
+    --theme-header-height: 60px;
+    --theme-header-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --theme-header-text: #1f0300;
+    --theme-nav-link-color: #1f0300;
+    --theme-nav-link-hover: #c3002f;
+    --theme-nav-link-active: #c3002f;
+    --theme-nav-font-size: 18px;
+    --theme-nav-font-weight: 500;
+
+    /* ===== FOOTER ===== */
+    --theme-footer-bg: #1a1a2e;
+    --theme-footer-text: #fef9e7;
+    --theme-footer-padding: 60px;
+    --theme-footer-text-muted: #d9d4d4;
+    --theme-footer-link: #ffffff;
+    --theme-footer-link-hover: #d4a017;
+    --theme-footer-border: #64c800;
+
+    /* ===== PRODUCT CARDS ===== */
+    --theme-product-title-size: 14px;
+    --theme-product-title-weight: 400;
+    --theme-product-price-size: 16px;
+    --theme-product-price-weight: 700;
+    --theme-product-card-radius: 12px;
+    --theme-product-img-radius: 8px;
+    --theme-product-hover-scale: 1.02;
+
+    /* ===== MODALS ===== */
+    --theme-modal-bg: #ffffff;
+    --theme-modal-radius: 16px;
+    --theme-modal-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    --theme-modal-backdrop: rgba(0,0,0,0.5);
+    --theme-modal-header-bg: #f8f7f7;
+
+    /* ===== TABLES ===== */
+    --theme-table-header-bg: #f8f7f7;
+    --theme-table-header-text: #1f0300;
+    --theme-table-border: #e9e6e6;
+    --theme-table-hover-bg: #f8f7f7;
+    --theme-table-stripe-bg: #fafafa;
+
+    /* ===== FORMS ===== */
+    --theme-input-height: 48px;
+    --theme-input-bg: #ffffff;
+    --theme-input-border: #d9d4d4;
+    --theme-input-radius: 8px;
+    --theme-input-focus-border: #c3002f;
+    --theme-input-focus-shadow: 0 0 0 3px rgba(195,0,47,0.1);
+    --theme-input-placeholder: #9a8e8c;
+
+    /* ===== BADGES ===== */
+    --theme-badge-radius: 20px;
+    --theme-badge-padding: 4px 12px;
+    --theme-badge-font-size: 12px;
+    --theme-badge-font-weight: 600;
+
+    /* ===== CHIPS ===== */
+    --theme-chip-bg: #f8f7f7;
+    --theme-chip-text: #4c3533;
+    --theme-chip-radius: 6px;
+    --theme-chip-border: #e9e6e6;
+
+    /* ===== SCROLLBAR ===== */
+    --theme-scrollbar-width: 10px;
+    --theme-scrollbar-track: #f1f1f1;
+    --theme-scrollbar-thumb: #c1c1c1;
+    --theme-scrollbar-thumb-hover: #a1a1a1;
+
+    /* ===== TRANSITIONS ===== */
+    --theme-transition-fast: all 0.15s ease;
+    --theme-transition: all 0.3s ease;
+    --theme-transition-slow: all 0.5s ease;
+
+    /* ===== SEARCH COMPONENT ===== */
+    --theme-search-bg: #ffffff;
+    --theme-search-border: #e9e6e6;
+    --theme-search-radius: 50px;
+    --theme-search-height: 50px;
+    --theme-search-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    /* ===== CATEGORY CARDS ===== */
+    --theme-category-bg: #ffffff;
+    --theme-category-radius: 12px;
+    --theme-category-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --theme-category-hover-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+    /* ===== PAGINATION ===== */
+    --theme-pagination-size: 40px;
+    --theme-pagination-radius: 8px;
+    --theme-pagination-gap: 5px;
+
+    /* ===== ALERTS ===== */
+    --theme-alert-radius: 8px;
+    --theme-alert-padding: 16px 20px;
+
+    /* ===== BREADCRUMB ===== */
+    --theme-breadcrumb-bg: #f8f7f7;
+    --theme-breadcrumb-separator: '/';
+    --theme-breadcrumb-text: #796866;
+
+    /* ===== SOCIAL COLORS ===== */
+    --theme-facebook: #1877f2;
+    --theme-twitter: #1da1f2;
+    --theme-instagram: #e4405f;
+    --theme-whatsapp: #25d366;
+    --theme-youtube: #ff0000;
+    --theme-linkedin: #0a66c2;
+
+    /* ===== LINK COLORS ===== */
+    --theme-link: #b8860b;
+    --theme-link-hover: #996f09;
+
+    /* ===== LEGACY VARIABLES (Backwards Compatibility) ===== */
+    --muaadh-primary: #b8860b;
+    --muaadh-primary-hover: #996f09;
+    --muaadh-primary-dark: #7a5807;
+    --muaadh-primary-light: #fef9e7;
+    --muaadh-primary-rgb: 184, 134, 11;
+    --muaadh-secondary: #1a1a2e;
+    --muaadh-secondary-hover: #2d2d44;
+    --muaadh-success: #22c55e;
+    --muaadh-warning: #b8860b;
+    --muaadh-danger: #dc2626;
+    --muaadh-info: #3b82f6;
+    --muaadh-text: #1a1a2e;
+    --muaadh-text-muted: #6b6b7d;
+    --muaadh-border: #e8e2d0;
+    --muaadh-border-light: #f5f0e1;
+    --muaadh-bg-light: #fefbf0;
+    --muaadh-bg-gray: #f5f0e1;
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+    width: var(--theme-scrollbar-width);
+    height: var(--theme-scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-scrollbar-thumb);
+    border-radius: var(--theme-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-scrollbar-thumb-hover);
+}
+
+/* ===== BODY STYLING ===== */
+body {
+    font-family: var(--theme-font-primary);
+    font-size: var(--theme-font-size-base);
+    line-height: var(--theme-line-height);
+    color: var(--theme-text-primary);
+    background-color: var(--theme-bg-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--theme-font-heading);
+}
